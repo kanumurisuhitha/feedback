@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e9edf5, #c8d0e7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Form Container */
+.form-container {
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background: #f9f9f9;
+}
+
+.input-field:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+  outline: none;
+}
+
+/* Button */
+.btn-primary {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+  padding: 0.9rem 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #5563d1, #5c3b91);
+}
+
+/* Link */
+.link {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #667eea;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Small shadow for cards (user list / dashboards) */
+.card {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons for dashboard */
+.btn-secondary {
+  background: #28a745;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #218838;
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-danger:hover {
+  background: #bd2130;
+}
+
+.form-container {
+  max-width: 900px;        /* Limit width */
+  margin: 0 auto;          /* Center horizontally */
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-card {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.feedback-card {
+  background-color: #f0f8ff;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #cbd5e0;
+}
+
+.feedback-section {
+  margin-top: 1rem;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1rem;
+}
